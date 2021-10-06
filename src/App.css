@@ -1,7 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: gainsboro;
+}
+.navbar-brand {
+  margin-left: 10px;
+}
+.nav-item {
+  margin-left: 10px;
+}
+.navbar-text {
+  margin-left: 30%;
+  color: black !important;
+}
+.d-block {
+  height: 60vh !important;
+  object-fit: cover;
 }
