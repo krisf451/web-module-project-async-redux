@@ -22,6 +22,7 @@
   flex-direction: column;
   padding: 10px;
   margin-bottom: 20px;
+  min-width: 300px;
   width: 35%;
   margin: 0 auto;
 }

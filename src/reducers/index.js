@@ -7,6 +7,15 @@ const initialState = {
       first: "",
       last: "",
     },
+    dob: {
+      age: "",
+    },
+    gender: "",
+    location: {
+      city: "",
+      country: "",
+      state: "",
+    },
     picture: {
       large: "",
       medium: "",

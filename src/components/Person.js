@@ -65,11 +65,23 @@ function Person(props) {
               <CardBody>
                 <CardTitle tag="h5">Say Hi to:</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  {person.name.first} {person.name.last}
+                  {person.name.first} {person.name.last}{" "}
+                  {`(${person.dob.age} ${person.gender})`}
                 </CardSubtitle>
+                {/* <CardSubtitle
+                  style={{ backgroundColor: "lightgray" }}
+                  tag="h6"
+                  className="mb-2 text-muted"
+                >
+                  {person.location.city} {person.location.state}
+                  {`(${person.location.country})`}
+                </CardSubtitle> */}
                 <CardText fontSize="12px">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  iste voluptate deleniti eos quaerat est repudiandae
+                  laudantium, tenetur labore eligendi sapiente. Adipisci,
+                  commodi optio voluptates quis voluptatem neque explicabo
+                  iusto.
                 </CardText>
                 <Button onClick={handleClick}>Get New Person</Button>
               </CardBody>

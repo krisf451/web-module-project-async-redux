@@ -25,7 +25,7 @@ function App() {
             Home
           </NavLink>
           <NavLink className="links" exact to="/conways">
-            Conways
+            Conways Game of Life
           </NavLink>
           <NavLink className="links" exact to="/person">
             Generate Random Person
