@@ -4,6 +4,18 @@ export const FETCH_START = "FETCH_START";
 export const FETCH_SUCCESS = "FETCH_SUCCESS";
 export const FETCH_FAIL = "FETCH_FAIL";
 
+//other possible APIS to play with
+
+//predicts someones age based on their name
+//https://api.agify.io?name=michael
+
+//random dog images
+//https://dog.ceo/api/breeds/image/random
+
+//joke API
+//https://v2.jokeapi.dev/joke/Any
+//https://v2.jokeapi.dev/joke/Programming
+
 //create a thunk action object
 
 export const getPerson = () => {

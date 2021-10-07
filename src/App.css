@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Noto+Sans+JP&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Mono", monospace;
+  /* font-family: "Ephesis", cursive; */
 }
 body {
-  font-family: "Roboto Mono", monospace;
   background-color: gainsboro;
 }
 .navbar-brand {
@@ -22,6 +23,7 @@ body {
   color: black !important;
 }
 .d-block {
-  height: 60vh !important;
+  height: 200px !important;
   object-fit: cover;
+  z-index: -3 !important;
 }

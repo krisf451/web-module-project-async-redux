@@ -19,7 +19,19 @@ function Person(props) {
   const toggle = () => setFadeIn(!fadeIn);
 
   const { person, isFetching, error, getPerson } = props;
-  useEffect(() => {}, []);
+  //   useEffect(() => {
+  //     const timer = setTimeout(() => {
+  //       if (isFetching) {
+  //         return (
+  //           <div className="fetching">
+  //             <h2>Fetching a person for ya!</h2>
+  //           </div>
+  //         );
+  //       }
+  //     }, 2000);
+  //     return () => clearTimeout(timer);
+  //   }, [isFetching]);
+
   const handleClick = () => {
     getPerson();
   };
@@ -29,7 +41,11 @@ function Person(props) {
   }
 
   if (isFetching) {
-    return <h2>Fetching person for ya!</h2>;
+    return (
+      <div className="fetching">
+        <h2 className="fetch-header">Fetching a person for ya!</h2>
+      </div>
+    );
   }
   return (
     <div className="person">

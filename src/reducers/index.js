@@ -1,4 +1,5 @@
 import { FETCH_START, FETCH_SUCCESS, FETCH_FAIL } from "../actions";
+
 const initialState = {
   person: {
     name: {
@@ -12,6 +13,8 @@ const initialState = {
       thumbnail: "https://randomuser.me/api/portraits/thumb/men/70.jpg",
     },
   },
+  dog: {},
+
   isFetching: false,
   error: "",
 };
