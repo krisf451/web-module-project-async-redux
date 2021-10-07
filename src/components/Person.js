@@ -47,36 +47,46 @@ function Person(props) {
       </div>
     );
   }
-  return (
-    <div className="person">
-      <Button color="primary" onClick={toggle}>
-        Generate A Person
-      </Button>
-      <Fade in={fadeIn} tag="h5" className="mt-3">
-        <div className="person-card">
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src={person.picture.medium}
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Say Hi to:</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                {person.name.first} {person.name.last}
-              </CardSubtitle>
-              <CardText fontSize="12px">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-              <Button onClick={handleClick}>Get New Person</Button>
-            </CardBody>
-          </Card>
-        </div>
-      </Fade>
-    </div>
-  );
+  if (person.picture.medium) {
+    return (
+      <div className="person">
+        <Button color="primary" onClick={toggle}>
+          Try Me
+        </Button>
+        <Fade in={fadeIn} tag="h5" className="mt-3">
+          <div className="person-card">
+            <Card>
+              <CardImg
+                top
+                width="100%"
+                src={person.picture.medium}
+                alt="Card image cap"
+              />
+              <CardBody>
+                <CardTitle tag="h5">Say Hi to:</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  {person.name.first} {person.name.last}
+                </CardSubtitle>
+                <CardText fontSize="12px">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </CardText>
+                <Button onClick={handleClick}>Get New Person</Button>
+              </CardBody>
+            </Card>
+          </div>
+        </Fade>
+      </div>
+    );
+  } else {
+    return (
+      <div className="person-card">
+        <Button className="" onClick={handleClick}>
+          Get New Person
+        </Button>
+      </div>
+    );
+  }
 }
 const mapStateToProps = (state) => {
   return {

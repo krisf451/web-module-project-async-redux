@@ -10,6 +10,7 @@ import {
 import Navigation from "./components/Navigation";
 import DisplayCarousel from "./components/DisplayCarousel";
 import Person from "./components/Person";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         <DisplayCarousel />
         {/* <Person /> */}
         <div>
+          <NavLink className="links" exact to="/">
+            Home
+          </NavLink>
           <NavLink className="links" exact to="/conways">
             Conways
           </NavLink>
@@ -31,9 +35,9 @@ function App() {
           <Route path="/person">
             <Person />
           </Route>
-          {/* <Route exact path="/" component={Person}>
-            <Person />
-          </Route> */}
+          <Route exact path="/">
+            <Form />
+          </Route>
         </Switch>
       </Router>
     </div>
