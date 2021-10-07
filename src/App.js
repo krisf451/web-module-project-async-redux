@@ -11,6 +11,7 @@ import Navigation from "./components/Navigation";
 import DisplayCarousel from "./components/DisplayCarousel";
 import Person from "./components/Person";
 import Form from "./components/Form";
+import Conways from "./components/Conways";
 
 function App() {
   return (
@@ -29,11 +30,13 @@ function App() {
           <NavLink className="links" exact to="/person">
             Generate Random Person
           </NavLink>
-          <NavLink to="/item-list">Shop</NavLink>
         </div>
         <Switch>
           <Route path="/person">
             <Person />
+          </Route>
+          <Route path="/conways">
+            <Conways />
           </Route>
           <Route exact path="/">
             <Form />
