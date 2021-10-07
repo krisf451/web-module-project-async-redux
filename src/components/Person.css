@@ -32,3 +32,10 @@
   padding: 5px;
   margin-top: 10px;
 }
+.card-subtitle {
+  font-weight: bold !important;
+  font-size: 1.6rem;
+}
+.card-text {
+  font-size: 14px !important;
+}

@@ -50,7 +50,7 @@ function Person(props) {
   return (
     <div className="person">
       <Button color="primary" onClick={toggle}>
-        Toggle Fade
+        Generate A Person
       </Button>
       <Fade in={fadeIn} tag="h5" className="mt-3">
         <div className="person-card">
@@ -62,11 +62,11 @@ function Person(props) {
               alt="Card image cap"
             />
             <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
+              <CardTitle tag="h5">Say Hi to:</CardTitle>
               <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Say Hi to: {person.name.first} {person.name.last}
+                {person.name.first} {person.name.last}
               </CardSubtitle>
-              <CardText>
+              <CardText fontSize="12px">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </CardText>
